@@ -9,10 +9,12 @@ function App() {
     e.preventDefault();
     setMessage(`Welcome ${name}`)
   }
-  
+
   useEffect(()=> {
     if(message){
       alert('Thanks for visiting me')
+      setName('')
+      setMessage('')
     }
   },[message])
 
